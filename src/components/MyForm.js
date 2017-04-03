@@ -11,9 +11,9 @@ class MyForm extends React.Component {
 
   render() {
     return (
-      <Form model="user" onSubmit={(val) => this.handleSubmit(val)}>
+      <Form model="user" onSubmit={(user) => this.handleSubmit(user)}>
         <label>Your name?</label>
-        <Control.text model=".name" />
+        <Control.text model="user.name" />
         <button>Submit!</button>
       </Form>
     );
